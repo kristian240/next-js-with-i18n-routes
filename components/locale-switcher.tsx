@@ -12,11 +12,6 @@ export default function LocaleSwitcher() {
       <p>Locale switcher:</p>
       <ul>
         {otherLocales.map((locale) => {
-          console.log({
-            pathname,
-            query,
-            href: useI18nHref(pathname, { locale, ...query } as Record<string, string>),
-          });
           return (
             <li key={locale}>
               <Link
